@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farheen Matte | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-margin-top: 100px;
+    }
+
+    
+    .header-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: -70px;
+    margin-bottom:80px; 
+    }
+
+
+    .header-icons a svg {
+    vertical-align: middle;
+    transition: fill 0.3s ease;
+    }
+
+    .header-icons a:hover svg {
+    fill: #ffd700;
+    }
+
+
+    body {
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+    background-color: #06276d;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    }
+
+    header h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    }
+
+    .header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-right: 1rem;
+    }
+
+    .header-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    }
+
+    .header-nav a:hover,
+    .header-nav a.active {
+    color: #ffd700;
+    }
+
+
+    .front-profile {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #e3f0d8;
+      margin-top: 100px;
+      padding-top: 100px;
+      margin-bottom:-135px;
+
+    }
+
+    .profile-pic {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 4px solid #a5d0ee;
+    }
+
+    .navbar {
+      background: #0077cc;
+      padding: 0.5rem 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover, .navbar a.active {
+      color: #ffd700;
+    }
+
+    .main-content {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-top: 200px;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      color: #0077cc;
+      border-bottom: 2px solid #0077cc;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      margin-left: 1.5rem;
+      list-style: disc;
+    }
+
+    .footer {
+      background-color: #f1f1f1;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .declaration {
+      margin-top: 1.5rem;
+      font-style: italic;
+    }
+
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+      z-index: 999;
+    }
+
+    #topBtn:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to my Portfolio</h1>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#footer">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+
+  <div class="front-profile">
+    <img src="Screenshot 2025-05-31 131620.png" alt="Profile Picture" class="profile-pic">
+    <h1>Farheen Matte</h1>
+    <p>Electronics and Communication Engineer</p>
+  </div>
+
+  <div class="front-profile">
+    <div class="header-icons">
+    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24"><path d="M12 0.297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385 0.6 0.113 0.82-0.258 0.82-0.577 0-0.285-0.01-1.04-0.015-2.04-3.338 0.724-4.042-1.61-4.042-1.61-0.546-1.387-1.333-1.757-1.333-1.757-1.087-0.744 0.084-0.729 0.084-0.729 1.205 0.084 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492 0.997 0.108-0.775 0.418-1.305 0.762-1.605-2.665-0.305-5.466-1.335-5.466-5.931 0-1.31 0.465-2.381 1.235-3.221-0.135-0.303-0.54-1.527 0.105-3.176 0 0 1.005-0.322 3.3 1.23 0.96-0.267 1.98-0.399 3-0.405 1.02 0.006 2.04 0.138 3 0.405 2.28-1.552 3.285-1.23 3.285-1.23 0.645 1.649 0.24 2.873 0.12 3.176 0.765 0.84 1.23 1.911 1.23 3.221 0 4.608-2.805 5.625-5.475 5.921 0.42 0.36 0.81 1.096 0.81 2.21 0 1.594-0.015 2.877-0.015 3.273 0 0.315 0.21 0.69 0.825 0.57 4.77-1.59 8.205-6.088 8.205-11.387 0-6.627-5.373-12-12-12z"/></svg>
+    </a>
+    <a href="mailto:farheenmatte51@gmail.com" aria-label="Email">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24"><path d="M20 4H4c-1.104 0-2 .896-2 2v12c0 1.104.896 2 2 2h16c1.104 0 2-.896 2-2V6c0-1.104-.896-2-2-2zm0 2v.511L12 13 4 6.511V6h16zM4 18v-9.432l7.664 6.137c.17.136.385.204.592.204s.423-.068.593-.204L20 8.568V18H4z"/></svg>
+    </a>
+    <a href="https://drive.google.com/file/d/1i74RiOloYBzOPUpKFsnaOdlwCFttNHIA/view" target="_blank" aria-label="Resume">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24"><path d="M6 2h9l5 5v15a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm9 5V3.5L18.5 7H15zM8 14h8v2H8v-2zm0-4h8v2H8v-2z"/></svg>
+    </a>
+    </div>
+  </div>
+  
+
+  
+
+  <div class="main-content">
+    <section id="home">
+      <h2>Objective</h2>
+      <p>To obtain a challenging position to best utilize my skills and grow technically and managerially, while contributing to organizational goals.</p>
+
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>C/C++</li>
+        <li>Python</li>
+        <li>Verilog Programming</li>
+      </ul>
+
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Teamwork</li>
+        <li>Leadership</li>
+        <li>Problem Solving & Work Ethic</li>
+      </ul>
+
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.E in ECE</strong>, Basaveshwar Engineering College, Bagalkot (2020-2024) - CGPA: 8.56</li>
+        <li><strong>PUC</strong>, JSS College, Gokak (2018-2020) - 89.50%</li>
+        <li><strong>SSLC</strong>, Abul Kalam Azad High School, Gokak (2015-2018) - 93.76%</li>
+      </ul>
+
+      <h2>Areas of Interest</h2>
+      <ul>
+        <li>VLSI Domain</li>
+        <li>Embedded System Designs</li>
+        <li>Hardware Design and Development</li>
+      </ul>
+
+      <h2>Certifications</h2>
+      <ul>
+        <li>NPTEL: "The Joy of Computing Using Python" – 85%</li>
+        <li>Maven Silicon: VLSI</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p><strong>Tata Consulting Engineers Limited-2024</strong> </p>
+      <ul>
+        <li>Power supply to HVAC upgradation project</li>
+        <li>Power supply to new Oxygen Removal area</li>
+        <li>Power supply to new PLC Cabinet upgradation</li>
+        <li>Power supply to new Flowmeter and Flow computer project</li>
+      </ul>
+
+      <h2>Internship</h2>
+      <p><strong>Indian Institute of Science, (IISc) Bengaluru</strong></p>
+         <p>Project: <strong>Smart Query Interface</strong></p>
+      <ul>
+        <p>Developed and trained machine learning models to interpret natural language queries and map them to structured database queries, enhancing user interaction with complex datasets</p>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Movement Detection Based Automatic Fan and Light Controller using Arduino</strong></li>
+        <p>Designed and implemented an Arduino-based automation system that activates fan and light controls based on real-time motion detection using PIR sensors</p>
+
+        <p>Optimized energy efficiency by integrating sensor-triggered control logic to minimize unnecessary power consumption in unoccupied spaces</p>
+        <li><strong>Intelligent Harvesting Decision System for Date Fruit using Deep Learning</strong></li>
+        <p>Built a deep learning model using convolutional neural networks (CNNs) to classify the ripeness of date fruits from images, enabling automated harvesting decisions</p>
+
+        <p>Collected and preprocessed a custom dataset, trained the model with high accuracy, and deployed it for real-time classification in agricultural environments</p>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Languages Known</h2>
+      <ul>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Urdu</li>
+        <li>Kannada</li>
+        <li>Marathi</li>
+      </ul>
+    </section>
+  </div>
+
+  <section id="footer" class="footer">
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> <a href="mailto:farheenmatte51@gmail.com">farheenmatte51@gmail.com</a></p>
+    <p><strong>Phone:</strong> 8073323278</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/farheen-matte-6276b9284" target="_blank">farheen-matte-6276b9284</a></p>
+    <p class="declaration">Farheen Matte 2025 Copyright reserved.</p>
+  </section>
+
+  <button id="topBtn" title="Go to top">↑</button>
+
+  <script>
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = function () {
+      topBtn.style.display = document.documentElement.scrollTop > 100 ? "block" : "none";
+    };
+    topBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('.navbar a').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+        const id = this.getAttribute('href').replace('#','');
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
