@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,6 @@
     padding: 0;
   }
   
-  /* Header / Profile */
   .front-profile {
     text-align: center;
     padding: 2rem 1rem;
@@ -30,7 +28,7 @@
     margin-bottom: 1rem;
   }
   
-  /* Topbar / Navbar */
+
   .topbar-container {
     background-color: #333;
     color: white;
@@ -65,7 +63,7 @@
     background-color: #555;
   }
   
-  /* Main Content */
+
   .main-content {
     padding: 2rem 10%;
   }
@@ -97,7 +95,6 @@
     font-size: 1rem;
   }
   
-  /* Footer */
   .footer {
     background: #e3f2fd;
     padding: 2rem 1rem;
@@ -120,7 +117,7 @@
     color: #444;
   }
   
-  /* Back to Top Button */
+
   #topBtn {
     position: fixed;
     bottom: 30px;
@@ -141,7 +138,7 @@
     background-color: #005f73;
   }
   
-  /* Responsive Design */
+
   @media (max-width: 768px) {
     .main-content {
       padding: 1rem 5%;
